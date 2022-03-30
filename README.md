@@ -2,7 +2,7 @@
 
 Create "immutable" classes in python.
 
-I created a simple python object that, when inherited in another class, will prevent assignment operations outside the `\_\_init__()` method.
+I created a simple python object that, when inherited in another class, will prevent assignment operations outside the `__init__()` method.
 
 **Note: DOES NOT CREATE TRUELY IMMUTABLE REFERENCES**
 
