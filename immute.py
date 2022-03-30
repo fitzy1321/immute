@@ -26,7 +26,7 @@ class Immutable(metaclass=ImmutableMeta):
         )
 
     def __setattr__(self, *args) -> None:
-        if inspect.stack()[1][3] == "__init__":
+        if inspect.stack()[1][3] in ("__init__", "__new__"):
             object.__setattr__(self, *args)
         else:
             raise TypeError(
