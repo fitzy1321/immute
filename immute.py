@@ -9,7 +9,6 @@ class ImmutableMeta(type):
         )
 
     def __setattr__(self, *args) -> None:
-        print(inspect.stack()[1][3])
         if inspect.stack()[1][3] in ("__init__", "__new__"):
             object.__setattr__(self, *args)
         else:
