@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "immute"
-version = "0.3.0"
+version = "0.3.1"
 description = "Create immutable python classes"
 authors = ["fitzypop <fitzypop@pm.me>"]
 license = "MIT"
