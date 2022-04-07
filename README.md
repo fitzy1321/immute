@@ -4,7 +4,7 @@ Create "immutable" classes in python.
 
 I created a simple python object that, when inherited in another class, will prevent assignment operations outside the `__init__()` or `__new__()` methods.
 
-**Note: DOES NOT CREATE TRUELY IMMUTABLE REFERENCES**
+**Note: DOES NOT CREATE TRUELY IMMUTABLE REFERENCES.**
 
 Classes inheriting from `Immutable` are not immutable references, only immutable from assignments, reassignment and deletion operations.
 
@@ -37,7 +37,7 @@ config.num = 21
 # ^^^^^^ This will raise a TypeError exception
 #
 # Attempting to assign class level attributes will throw an error
-config.name = "thing 1"
+Singleton.name = "thing 1"
 # ^^^^^^^^ This will raise a TypeError exception
 ```
 
